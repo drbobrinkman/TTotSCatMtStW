@@ -14,6 +14,6 @@ public class PlaceLens : MonoBehaviour {
     void Update () {
         var headPosition = mainCam.transform.position;
         var gazeDirection = mainCam.transform.forward;
-        gameObject.transform.localPosition = new Vector3(0.0f, 0.0f, 1.152f); //Assuming gazeDirection is a unit vector, so 1 meter
+        gameObject.transform.localPosition = headPosition + gazeDirection; //Assuming gazeDirection is a unit vector, so 1 meter
 	}
 }

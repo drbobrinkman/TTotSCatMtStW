@@ -96,7 +96,7 @@ Material:
     m_Floats:
     - first:
         name: _BottomScale
-      second: 4
+      second: 6
     - first:
         name: _BumpScale
       second: 1
@@ -147,7 +147,7 @@ Material:
       second: 0.02
     - first:
         name: _SideScale
-      second: 4
+      second: 6
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -162,7 +162,7 @@ Material:
       second: 1
     - first:
         name: _TopScale
-      second: 4
+      second: 6
     - first:
         name: _UVSec
       second: 0
