@@ -18,7 +18,7 @@ Material:
     - first:
         name: _Bottom
       second:
-        m_Texture: {fileID: 2800000, guid: 836a02520953dfd49bf1852de2252d2b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 48e0e6df2464e49449c1776a3445e1a9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -84,19 +84,19 @@ Material:
     - first:
         name: _Side
       second:
-        m_Texture: {fileID: 2800000, guid: 836a02520953dfd49bf1852de2252d2b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 48e0e6df2464e49449c1776a3445e1a9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _Top
       second:
-        m_Texture: {fileID: 2800000, guid: 836a02520953dfd49bf1852de2252d2b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 48e0e6df2464e49449c1776a3445e1a9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BottomScale
-      second: 5
+      second: 2
     - first:
         name: _BumpScale
       second: 1
@@ -147,7 +147,7 @@ Material:
       second: 0.02
     - first:
         name: _SideScale
-      second: 5
+      second: 2
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -162,7 +162,7 @@ Material:
       second: 1
     - first:
         name: _TopScale
-      second: 5
+      second: 2
     - first:
         name: _UVSec
       second: 0

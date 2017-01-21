@@ -245,7 +245,10 @@ namespace HoloToolkit.Unity.SpatialMapping
                 {
                     meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                 }
+
+                //surface.GetComponent<MeshFilter>().sharedMesh.RecalculateNormals();
             }
+
 
             surfaceWorkOutstanding = false;
             SurfaceObserver.SurfaceDataReadyDelegate dataReady = DataReady;
