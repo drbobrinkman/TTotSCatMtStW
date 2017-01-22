@@ -53,6 +53,10 @@ public class WalkToTarget : MonoBehaviour {
         } else
         {
             //anim.SetFloat("Walk", 0.0f);
+            var fwd = mainCam.transform.forward;
+            fwd.y = 0;
+            fwd.Normalize();
+            gameObject.transform.LookAt(walkTarget.transform.position + fwd); 
         }
     }
 
