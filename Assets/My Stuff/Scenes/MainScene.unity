@@ -861,7 +861,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cryClips:
-  - {fileID: 8300000, guid: 25f57a423322f5a45bf9490fe9d13300, type: 3}
+  - {fileID: 8300000, guid: 37ead72117d4a6647bed176fdc784eb2, type: 3}
+  - {fileID: 8300000, guid: 6a016de2d687e644282347b79c97cb93, type: 3}
+  - {fileID: 8300000, guid: 9cf27f2125f60064ba4bd43027e2e270, type: 3}
 --- !u!1001 &731338512
 Prefab:
   m_ObjectHideFlags: 0
