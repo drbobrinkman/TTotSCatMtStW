@@ -12,7 +12,7 @@ In order to build this project you will need:
 The first time you build the project you may need to update some project settings. When you build in Unity3D, it will create a Visual Studio project. When you open the project you will need to change from "Debug" to "Release" and from "ARM" to "x86" in the configuration drop downs. See Microsoft's [Holograms 101](https://developer.microsoft.com/EN-US/WINDOWS/HOLOGRAPHIC/holograms_101) for step-by-step instructions.
 
 ## Intellectual property
-All of my contributions to this project are open and free to use under the attached LICENSE.md terms. Note, however, that different licenses apply to a few materials that I used but which were not created by me:
+All of my contributions to this project are open and free to use under the attached LICENSE file. Note, however, that different licenses apply to a few materials that I used but which were not created by me:
 
 0. The terrain texture files are by [The Sunny Side](http://u3d.as/sQ6) and available for free on the Unity Asset Store.
 1. The tortoise shell model is by RP Bennett, and is available from Autodesk's [123dapp](http://www.123dapp.com/catch/Turtle-shell-1-underside/6480461). This model is licensed under the [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
