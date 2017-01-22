@@ -44,5 +44,9 @@ public class PlaceLens : MonoBehaviour {
         }
 
         gameObject.transform.position = bowlPos;
+        var headfwd = mainCam.transform.forward;
+        headfwd.y = 0.0f;
+        headfwd.Normalize();
+        gameObject.transform.forward = headfwd;
 	}
 }
