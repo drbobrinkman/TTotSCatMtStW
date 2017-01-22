@@ -84,13 +84,13 @@ Material:
     - first:
         name: _Side
       second:
-        m_Texture: {fileID: 2800000, guid: 34168fb545d6ce04cb769914df686e0a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 770fe947d1f97e942855e014cf644307, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _Top
       second:
-        m_Texture: {fileID: 2800000, guid: 770fe947d1f97e942855e014cf644307, type: 3}
+        m_Texture: {fileID: 2800000, guid: 675cb6411f36989469f42a1a69297d71, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
