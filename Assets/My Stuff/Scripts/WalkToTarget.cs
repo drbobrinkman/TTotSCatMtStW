@@ -40,7 +40,7 @@ public class WalkToTarget : MonoBehaviour {
             //This section only needed if not using an animated avatar
             var walkDir = footPosition - avPosition;
             walkDir.Normalize();
-            gameObject.transform.position += 1.0f * walkDir * Time.deltaTime;
+            gameObject.transform.position = footPosition; //+= 1.0f * walkDir * Time.deltaTime;
 
             gameObject.transform.LookAt(walkTarget.transform);
             float now = Time.time;
