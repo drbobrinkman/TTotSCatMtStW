@@ -45,6 +45,10 @@
 		float scaleFactor = 1.0f - pow(1.0f - min(1.0f, max(0, (_Sizing - dist)/_Sizing)),5);
 		o.Albedo = _Color;
 		o.Alpha = scaleFactor;
+		if (IN.worldPos.x > 5.0f || IN.worldPos.x < -5.0f ||
+			IN.worldPos.z > 5.0f || IN.worldPos.z < -5.0f) {
+			o.Alpha = 0.0f;
+		}
 	}
 	ENDCG
 	}
