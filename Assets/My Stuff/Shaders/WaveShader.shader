@@ -3,6 +3,9 @@
 		_Color("Color", Color) = (1,1,0,1)
 		_Sizing("Sizing", Float) = 1.0
 		_Spacing("Spacing", Float) = 0.5
+		_LastCryTime("Last Cry Time", Float) = 0.0
+		_CurTime("Current Time", Float) = 0.0
+		_CryLocation("Cry Location", Vector) = (0, 0, 0, 0)
 	}
 
 		SubShader{
@@ -21,8 +24,9 @@
 	#pragma exclude_renderers flash
 #pragma target 3.0
 
-			float _Sizing, _Spacing;
+			float _Sizing, _Spacing, _LastCryTime, _CurTime;
 			fixed4 _Color;
+			float4 _CryLocation;
 
 	struct Input {
 		float3 worldPos;

@@ -11,6 +11,8 @@ public class WalkToTarget : MonoBehaviour {
     private float lastStepTime = 0.0f;
 
     public List<AudioClip> stepClips;
+    public float cutOff = 0.25f; //10cm
+    public float timePerStep = 1.5f;
 
     private void Start()
     {
@@ -23,9 +25,6 @@ public class WalkToTarget : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        var cutOff = 0.1f; //10cm
-        var timePerStep = 1.0f;
-
         var footPosition = walkTarget.transform.position;
         var headPosition = mainCam.transform.position;
         var avPosition = gameObject.transform.position;
