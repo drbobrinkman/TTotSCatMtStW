@@ -46,7 +46,34 @@
 		closestDot.y = curPos.y;
 
 		float dist = distance(closestDot, curPos);
+
+		//Next, account for effect of cries. For now, shear direction is always +z to the right side of fault, -z to the left side
+		float3 shearDirection = float3(0.0f, 0.0f, 1.0f);
+		float3 dirFromBaby = closestDot - _CryLocation;
+		dirFromBaby.y = 0.0f;
+		dirFromBaby = normalize(dirFromBaby);
+		float3 whichWay = dirFromBaby - shearDirection;
+		whichWay.y = 0.0f;
+		whichWay = normalize(whichWay);
+		float theta = atan2(whichWay.z, whichWay.x);
+		
+		//float theta = acos(cosTheta);
+		float scaleDueToAngle = pow(8, pow(sin(4*theta), 5));
+
+		float distancePerSecond = 3.0f; //in meters per second
+		float wavePeakDistance = (_CurTime - _LastCryTime)*distancePerSecond;
+		float peakWidth = 2.0f;
+		float distFromSource = distance(closestDot, _CryLocation);
+		float distanceFromPeak = min(abs(distFromSource - wavePeakDistance), peakWidth);
+
+		dist = dist * lerp(1.0, scaleDueToAngle, 1 - distanceFromPeak/ peakWidth);
+
 		float scaleFactor = 1.0f - pow(1.0f - min(1.0f, max(0, (_Sizing - dist)/_Sizing)),5);
+
+		
+
+
+
 		o.Albedo = _Color;
 		o.Alpha = scaleFactor;
 		if (IN.worldPos.x > 5.0f || IN.worldPos.x < -5.0f ||
